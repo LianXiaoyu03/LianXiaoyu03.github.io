@@ -1,0 +1,56 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Computer Science</title>
+        <link rel="stylesheet" href="background.css">
+        <script>
+            function change(num){
+                var p = 'img/p' + num +'.jpg';
+                document.getElementById("mainImg").src = p;
+                if(num == 1)
+                    document.getElementById("mainUrl").href="https://my.aum.edu/image/image_gallery?uuid=56bb96c8-a24a-4969-abaf-6136d8c1a84d&groupId=10217&t=1598560656294";
+                else if(num == 2)
+                    document.getElementById("mainUrl").href="http://www.aum.edu/askaum";
+                else if(num == 3)
+                    document.getElementById("mainUrl").href="https://my.aum.edu/group/mycampus/home#";
+                else if(num == 4)
+                    document.getElementById("mainUrl").href="https://http://www.aum.edu/digitalgiftbag";
+                else if(num == 5)
+                    document.getElementById("mainUrl").href="http://www.aum.edu/counselingservices";
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <nav>
+                <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="introduction.html">CS Program</a></li>
+                <li><a href="ta_application.html">TA Application</a></li>
+                <li><a href="gpq.html">GPA Calculator</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="showpic">
+                    <a id="mainUrl" href="https://my.aum.edu/image/image_gallery?uuid=56bb96c8-a24a-4969-abaf-6136d8c1a84d&groupId=10217&t=1598560656294"><img id="mainImg" src="img/p1.jpg"></a>
+                </div>
+                <ul class="thumbs">
+                    <li onclick="change(1)"><img src="img/p1.jpg"></li>
+                    <li onclick="change(2)"><img src="img/p2.jpg"></li>
+                    <li onclick="change(3)"><img src="img/p3.jpg"></li>
+                    <li onclick="change(4)"><img src="img/p4.jpg"></li>
+                    <li onclick="change(5)"><img src="img/p5.jpg"></li>
+                </ul>
+            </main>
+            <footer>
+                Copyright &copy; AUM_CSCI_4970<br>
+                <a href="mailto:xLian@aum.edu">xLian@aum.edu</a>
+           </footer>
+        </div>
+    </body>
+  
+</html>
+    
